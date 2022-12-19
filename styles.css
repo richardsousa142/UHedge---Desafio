@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+}
+
+.header{
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(0, 209, 178, 255);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h1{
+	color: white;
+}
+
+.header a{
+    margin-right: 1rem;
+    text-decoration: none;
+	color: black;
+}
+
+.header a:hover{
+	background-color: rgba(0, 209, 178, 255);
+	color: white;
+}
+
+.nav{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav input.search{
+	width: 40%;
+	height: 30px;
+	border-radius: 5px 0px 0px 5px;
+	border-color: rgba(239,239,239,255);
+}
+
+.nav button.btn_search{
+	height: 36px;
+	width: 70px;
+	background-color: rgba(51,116,220,255);
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	color: white;
+}
+
+.interface_bebidas {
+	margin-top: 3vh;
+	padding: 0 2%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.interface_bebidas div.div_bebida{
+	width: 26%;
+	height: 30vh;
+	padding: 0 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	border-radius: 0.6rem;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.interface_bebidas div.div_bebida div.card_bebidas{
+	display: flex;
+	flex-direction: row;
+	margin-top: 10%;
+	height: 70%;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida{
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+
+.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida p{
+	width: 100%;  
+}
+
+.interface_bebidas div.div_bebida img {
+	width: auto;
+	height: 15vh; 
+}
+
+.pagination{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination a{
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+
+.pagination a.active {
+	background-color: dodgerblue;
+	color: white;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+@media(max-width: 1100px){
+
+	.interface_bebidas div.div_bebida{
+		width: 26%;
+	}
+	.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida h2{
+		font-size: 1.25rem;
+	}
+	.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida p{
+		font-size: 0.9rem;
+	}	
+}
+
+@media(max-width: 852px){
+	.interface_bebidas div.div_bebida{
+		width: 23%;
+	}
+	.interface_bebidas div.div_bebida img {
+		width: auto;
+		height: 9vh; 
+		margin-top: 20%;
+	}
+	.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida p{
+		font-size: 0.8rem;
+	}
+	.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida h2{
+		font-size: 1rem;
+	}
+	.interface_bebidas div.div_bebida div.card_bebidas div.div_info_bebida{
+		margin-left: 25px;
+	}
+}
+
+@media(max-width: 700px){
+	.interface_bebidas div.div_bebida{
+		width: 26%;
+	}
+
+}
+
+@media(max-width: 600px){
+
+	.header h1{
+		font-size: 1.2rem;
+	}
+	.interface_bebidas {
+		margin-top: 3vh;
+		padding: 0 2%;
+		display: flex;
+		flex-direction: column;
+	}
+	.interface_bebidas div.div_bebida{
+		width: 60%;
+	}
+	.interface_bebidas div.div_bebida img {
+		width: auto;
+		height: 9vh; 
+		margin-top: 10%;
+	}
+	.nav input.search{
+		width: 60%;
+		border-radius: 5px 5px 5px 5px;
+	}
+	.nav button.btn_search{
+		display: none;
+	}
+}
+
+@media(max-width: 280px){
+	.interface_bebidas div.div_bebida{
+		width: 70%;
+	}
+	.nav input.search{
+		width: 60%;
+		border-radius: 5px 5px 5px 5px;
+	}
+	.nav button.btn_search{
+		display: none;
+	}
+	.pagination{
+		font-size: 0.7rem;
+	}
+}

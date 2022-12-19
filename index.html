@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Bebidas</title>
+</head>
+<body>
+	<header class="header">
+		<h1>Beans Love Beers</h1>
+		<div>
+			<a href="" class="btn_home">Home</a>
+		</div>
+	</header>
+
+	<div class="nav">
+		<input class="search" type="text" placeholder="Search for beer...">				
+		<button class="btn_search">Search</button>
+	</div>
+
+	<main>
+		<div class="interface_bebidas"></div>
+		<div class="pagination">
+			<a onclick="getPreviousPage()" class="prev_page" data-page="-1">&laquo;</a>
+			<a onclick="getFirstPage()" class="first_page" data-page="1">1</a>
+			<a class="current_page" ></a>
+			<a onclick="getLastPage()" class="last_page" data-page="22">22</a>
+			<a onclick="getNextPage()" class="next_page" data-page="+1">&raquo;</a>
+		</div>
+	</main>
+	<script src="./punk_api.js"></script>
+</body>
+</html>
